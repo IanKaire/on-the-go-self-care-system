@@ -1,0 +1,492 @@
+@charset "UTF-8";
+@import url("transfonter.poppins/stylesheet.css");
+
+:root{
+  --blue:#0188DF;
+  --black: #111315;
+  --light-color:#777;
+  --box-shadow:.5rem .5rem 0 rgba(22, 70, 133, 0.2);
+  --text-shadow:.4rem .4rem 0 rgba(0, 0, 0, .2);
+  --border:.2rem solid var(--blue);
+}
+*{
+  margin:0;
+  padding:0;
+  transition: all .2s ease-out;
+  outline: none;
+  box-sizing: border-box;
+  border: none;
+  font-family:"Poppins",sans-serif;
+  text-decoration:none;
+}
+
+html{
+  overflow-x: hidden;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    margin-right: 40%;
+    box-shadow: var(--box-shadow);
+    color: var(--blue);
+    cursor: pointer;
+    border: var(--border);
+    border-radius: .5rem;
+    font-size: 2.0rem;
+}
+
+.header{
+  font-size: xx-large;
+  padding: 2rem 9%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  left: 0;
+  right: 0;
+  box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+  z-index: 1000;
+  background: #ffffff;
+}
+
+.header .logo{
+    font-size: 2.5rem;
+    color: var(--black);
+}
+
+.header .logo span{
+     color:var(--blue);
+}
+.header .navigation a{
+     font-size: 1.7rem;
+     color: var(--light-color);
+     margin-left: 1.5rem;
+}
+
+.header .navigation a:hover{
+     color: var(--blue);
+}
+#menu-btn{
+     font-size: 2rem;
+     border-radius: .5rem;
+     background: #eeeeee;
+     padding: 1rem 1.5rem;
+     color: var(--blue);
+     cursor: pointer;
+     display: none;
+}
+
+section{
+     padding: 2rem 9%;
+}
+section:nth-child(even){
+    background-color: #f5f5f5;
+}
+
+.heading{
+    text-align: center;
+    padding-bottom: 2rem;
+    text-shadow: var(--text-shadow);
+    text-transform: uppercase;
+    color:var(--black);
+    font-size: 7.5rem;
+    letter-spacing: .4rem;
+}
+
+.heading span{
+    text-transform: uppercase;
+    color:var(--blue);
+}
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.0rem;
+    padding: 10rem;
+}
+
+.home .image img{
+    width: 900px;
+    height: 800px;
+}
+
+.home .content{
+    flex: 1 1 45rem;
+}
+
+.home .image{
+    flex: 1 1 45rem;
+}
+
+.home .content h3{
+    font-size: 5.1rem;
+    color: var(--black);
+    text-shadow:var(--text-shadow);
+    line-height: 1.8;
+}
+.home .content p{
+    font-size: 2.0rem;
+    color: var(--light-color);
+    line-height: 1.8;
+    padding: 1rem 0;
+}
+
+.btn{
+    display: inline-block;
+    box-shadow: var(--box-shadow);
+    border-radius: 1rem;
+    color: #ffffff;
+    background-color: var(--black);
+    padding: 1.5rem 1.5rem 1.5rem 2rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 10%;
+    margin-top: 1rem;
+}
+
+.btn i{
+    padding: .7rem 1rem;
+    border-radius: .5rem;
+    margin-left: .5rem;
+    margin-right: .5rem;
+    color: var(--black);
+    background-color: #ffffff;
+}
+
+.btn:hover{
+    margin-top: 2em;
+}
+
+.box-container .box .btn{
+    font-size: 1.7rem;
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
+
+}
+.icons-container{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit,minmax(10rem,1fr));
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.icons-container .icons{
+    font-size: 3rem;
+    border: var(--border);
+    text-align: center;
+    text-shadow: var(--text-shadow);
+    padding: 2.5rem;
+    border-radius: 40px;
+    border-width: medium;
+}
+
+.icons-container .icons span{
+    font-size: 6.1rem;
+    color: var(--blue);
+}
+
+.icons-container .icons h3{
+    font-size: 6.1rem;
+    padding: .5rem 0;
+}
+.icons-container .icons p{
+    font-size: 1.8rem;
+}
+
+.services .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    gap:2rem;
+}
+
+.services .box-container .box{
+    background:#fff;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    border:var(--border);
+    padding: 2.5rem;
+}
+
+.services .box-container .box i{
+    color: var(--blue);
+    font-size: 6rem;
+    padding-bottom: .5rem;
+}
+
+.services .box-container .box h3{
+    color: var(--black);
+    font-size: 3rem;
+    padding:1rem 0;
+}
+
+.services .box-container .box p{
+    font-size: 2rem;
+    line-height: 2;
+}
+
+.about .row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+}
+.about .image img{
+    width: 700px;
+    height: 600px;
+}
+
+.about .row .image{
+    flex: 1 1 45rem;
+}
+
+.about .row .content{
+    flex: 1 1 45rem;
+}
+
+.about .row .content h3{
+    color: var(--black);
+    font-size: 4rem;
+    padding:1rem 0;
+}
+.about .row .content p{
+    font-size: 2.0rem;
+    color: var(--light-color);
+    line-height: 1.8;
+}
+.about .row .content .btn{
+    font-size: 1.7rem;
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
+    margin-left: 1%;
+}
+.medics .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(27rem,1fr));
+    gap:2rem;
+}
+
+.medics .box-container .box{
+    text-align: center;
+    background-color: #ffffff;
+    border: var(--border);
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    border-width: medium;
+    padding: 2.5rem;
+}
+
+.medics .box-container .box img{
+    object-fit: cover;
+    height: 25rem;
+    width: 20rem;
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.medics .box-container .box h3{
+     color: var(--black);
+     font-size: 2.5rem;
+}
+
+.medics .box-container .box span{
+    color: var(--blue);
+    font-size: 1.5rem;
+}
+
+.medics .box-container .box .share{
+    padding-top: 2rem ;
+}
+
+.medics .box-container .box .share a{
+    height: 5rem;
+    width: 5rem;
+    line-height: 4.5rem;
+    font-size: 2rem;
+    color: var(--blue);
+    border-radius: .5rem;
+    border: var(--border);
+}
+
+.medics .box-container .box .share a:hover{
+    background-color: var(--blue);
+    color: #ffffff;
+    box-shadow: var(--box-shadow);
+}
+
+.review .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(27rem,1fr));
+    gap: 2rem;
+}
+
+.review .box-container .box{
+    border: var(--border);
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    padding: 2.5rem;
+    background-color: #ffffff;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.review .box-container .box img{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    object-fit: cover; /*REVISE*/
+    border: .5rem solid #ffffff;
+}
+
+.review .box-container .box h3{
+    font-size: 2.2rem;
+    color: white;
+    padding: 1rem 0;
+}
+
+.review .box-container .box .stars i{
+    font-size: 1.5rem;
+    color: white;
+}
+
+.review .box-container .box .text{
+    font-size: 1.6rem;
+    color: var(--black);
+    line-height: 1.8rem;
+    padding-top: 2rem;
+}
+/*REVISE*/
+.review .box-container .box::before{
+    content: '';
+    position: absolute;
+    top:-4rem; left: 50%;
+    transform:translateX(-50%);
+    background:var(--blue);
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    height: 25rem;
+    width: 120%;
+    z-index: -1;
+}
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+    gap:2rem;
+}
+
+.footer .box-container .box h3{
+    font-size: 2.5rem;
+    color:var(--black);
+    padding: 1rem 0;
+}
+
+.footer .box-container .box a{
+    display: block;
+    font-size: 1.5rem;
+    color:var(--light-color);
+    padding: 1rem 0;
+}
+
+.footer .box-container .box a i{
+    padding-right: .5rem;
+    color:var(--blue);
+}
+
+.footer .box-container .box a:hover i{
+    padding-right:2rem;
+}
+
+.footer .credit{
+    padding: 1rem;
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    color:var(--light-color);
+    border-top: .1rem solid rgba(0, 0, 0, .1);
+}
+
+.footer .credit span{
+    color:var(--blue);
+}
+
+/*Change text-transform after through with project*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 991px) {
+      html{
+         font-size: 55%;
+      }
+      .header{
+        padding: 2rem;
+      }
+}
+
+
+@media (max-width: 768px) {
+    #menu-btn {
+        display: initial;
+    }
+
+    .header .navigation{
+        position: absolute;
+        top:115%; right: 2rem;
+        border-radius: .5rem;
+        box-shadow: var(--box-shadow);
+        width: 30rem;
+        border: var(--border);
+        background: #fff;
+        transform: scale(0);
+        opacity: 0;
+        transform-origin: top right;
+        transition: none;
+    }
+
+    .header .navigation .active{
+        transform: scale(1);
+        opacity: 1;
+        transition: .2s ease-out;
+    }
+
+    .header .navigation a{
+        font-size: 2rem;
+        display: block;
+        margin:2.5rem;
+    }
+
+
+}
+  @media (max-width: 450px) {
+        html{
+           font-size: 50%;
+         }
+     }
+
